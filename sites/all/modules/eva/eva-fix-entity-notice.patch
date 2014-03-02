@@ -1,0 +1,32 @@
+From b298eab27b6b36c01605f0c7fc4e418529914c91 Mon Sep 17 00:00:00 2001
+From: James Williams <james.williams@computerminds.co.uk>
+Date: Wed, 14 Sep 2011 10:34:54 +0100
+Subject: [PATCH] Fixed PHP notice of undefined variable 'entity'.
+
+---
+ eva.module |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/eva.module b/eva.module
+index bae7199..70c2a74 100755
+--- a/eva.module
++++ b/eva.module
+@@ -145,7 +145,7 @@ function eva_get_views($type = NULL, $reset = FALSE) {
+ function _eva_extract_entity_from_build($build) {
+   // EntityAPI often sticks stuff in here.
+   if (!empty($build['#entity'])) {
+-    return $entity;
++    return $build['#entity'];
+   }
+   
+   // Other entities stick them here!
+@@ -185,4 +185,4 @@ function eva_get_arguments_from_token_string($string, $type, $object) {
+   }
+   $args = token_replace($args, array($type => $object), array('sanitize' => FALSE));
+   return explode('/', $args);
+-}
+\ No newline at end of file
++}
+-- 
+1.7.1
+

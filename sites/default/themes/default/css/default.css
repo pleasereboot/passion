@@ -1,0 +1,183 @@
+body {
+	background: #99CC33 url(../images/body_back.jpg) repeat-x top center;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+	#page-wrapper {
+		background-color: transparent;
+	} 
+
+		#page {
+			background-color: transparent;
+		}
+	
+			#header{
+				height: 251px;
+				background: transparent url(../images/header_back.jpg) no-repeat top center;
+			}	
+
+				#logo {
+					float: left;
+					padding: 40px 15px 30px 0px;
+				}
+
+				.region-header {
+					float: right;
+					width: 960px;
+					margin: 0px;
+				}
+				
+				.with-secondary-menu .region-header {
+					margin-top: 0px;
+				}				
+				
+				#block-nice-menus-1	{
+					font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					color: #fff;
+					float: right;
+				
+				}
+				
+					#nice-menus-1	{
+					
+					}				
+				
+					ul.nice-menu li {
+						background: transparent ;
+						margin: 0;
+						padding: 0px 10px 0px 10px;
+						border: 0px solid #fff;
+					}
+	
+					ul.nice-menu a {
+						color: #fff;
+						font-size: 1.3em;
+						text-decoration: none;
+						font-weight: bold;
+					}
+	
+					ul.nice-menu a:hover,
+					ul.nice-menu a:active,
+					ul.nice-menu a.active {
+						color: #fff200;
+					}
+					
+			#main-wrapper {
+				background: transparent url(../images/-main-wrapper_back.png) no-repeat top center;
+			}
+			
+				#main {
+					background: #E3CD9B url(../images/-sidebar_back.png) no-repeat top left;
+					margin-top: 0px;
+					margin-bottom: 0px;
+					padding-bottom: 40px;
+				}
+				
+					#sidebar-first {
+						background-color: transparent;
+						width: 200px; 
+						min-height: 500px;
+						padding-top: 0px;
+					}
+
+						#sidebar-first a {
+							color: #000;
+							font-weight: bold;
+							font-size: 1.2em;
+							line-height: 2.1em;
+						}					
+						
+							#sidebar-first .sidebar,
+							#sidebar-first .section {
+								padding: 0px 0px 0px 0px;
+							}						
+								
+								.sidebar h2 {
+									border-bottom: 0px solid #D6D6D6;
+									font-size: 1.2em;
+									font-weight: bold;
+									line-height: 1.2;
+									margin: 0 0 0.5em;
+									padding-bottom: 5px;
+									text-shadow: 0 0px 0 #FFFFFF;
+									color: #fff;
+								}
+							
+								.sidebar .block{
+									border: 3px solid #85B32D;
+									background: #fff url(../images/block_back.jpg) no-repeat top center;
+									padding: 4px 15px 15px 15px;
+									margin: 0px 0px 10px 0px;
+								}
+								
+							#sidebar-second .sidebar,
+							#sidebar-second .section {
+								padding: 10px 0px 0px 0px;
+							}								
+						
+					.two-sidebars #content {
+						width: 460px;
+					}			
+ 
+						h1#page-title {
+							font-size: 1.5em;
+							line-height: 1;
+							font-weight: bold;
+							margin: 5px 0px 40px 50px;
+							text-align: right;
+							color: #fff;
+						}
+						
+					#content {
+						background: transparent url(../images/-content_back.png) repeat-x top left;
+					}
+					
+						#content div.content {
+							padding: 0px;
+						}	
+						
+						#content div.section {
+							padding: 0px 10px 0px 10px;
+						}						
+
+							#content-top {
+								width: 440px;
+								overflow: hidden;
+							}
+							
+								#content-top div.section {
+									padding: 0px;
+								}								
+
+								#block-views-banners-block div.content {
+									margin-top: 30px;
+									text-align: right;
+								}
+
+
+							#breadcrumb {
+								margin: 0 20px;
+							}				
+
+							.tabs {
+								margin: 0 20px 20px 20px;
+							}	
+
+							.products-left {
+								width: 225px;
+							}
+
+							.products-right{
+								width: 323px;
+							}
+
+					#sidebar-second {
+						background-color: transparent;
+						width: 200px; 
+						min-height: 500px;
+						padding-top: 0px;
+					}
+
+			#footer-wrapper {
+				background: #99CC33 url(../images/-main-wrapper_back.png) no-repeat top center;
+			}							

@@ -1,0 +1,56 @@
+From facb2f5f940c7882269d375d417da0580952b9cb Mon Sep 17 00:00:00 2001
+From: pifantastic <aaron.forsander@gmail.com>
+Date: Fri, 11 Mar 2011 10:42:27 -0600
+Subject: [PATCH] Issue #1089302: Remember fieldset collapsed states per user for the modules page.
+
+---
+ modules/system/system.admin.inc |    2 ++
+ modules/system/system.js        |   21 +++++++++++++++++++++
+ 2 files changed, 23 insertions(+), 0 deletions(-)
+
+diff --git a/modules/system/system.admin.inc b/modules/system/system.admin.inc
+index fb0664a..d2955a0 100644
+--- a/modules/system/system.admin.inc
++++ b/modules/system/system.admin.inc
+@@ -753,6 +753,8 @@ function _system_is_incompatible(&$incompatible, $files, $file) {
+  * @see system_modules_submit()
+  */
+ function system_modules($form, $form_state = array()) {
++  drupal_add_js(drupal_get_path('module', 'system') . '/system.js');
++    
+   // Get current list of modules.
+   $files = system_rebuild_module_data();
+ 
+diff --git a/modules/system/system.js b/modules/system/system.js
+index 7062549..e0e96e7 100644
+--- a/modules/system/system.js
++++ b/modules/system/system.js
+@@ -147,4 +147,25 @@ Drupal.behaviors.pageCache = {
+   }
+ };
+ 
++Drupal.behaviors.modules = {
++  attach: function (context, settings) {
++    var modules = $.cookie('Drupal.system.modules');
++    modules = JSON.parse(modules) || {};
++    
++    for (var id in modules) {
++      if (modules[id]) {
++        Drupal.toggleFieldset('#' + id);
++      }
++    }
++    
++    $('#system-modules fieldset.collapsible', context).bind('collapsed', function(event) {
++      var id = $(this).attr('id'),
++          states = $.cookie('Drupal.system.modules');
++      states = JSON.parse(states) || {};
++      states[id] = event.value ? 1 : 0;
++      $.cookie('Drupal.system.modules', JSON.stringify(states));
++    });
++  }
++};
++
+ })(jQuery);
+-- 
+1.6.6.1
+
