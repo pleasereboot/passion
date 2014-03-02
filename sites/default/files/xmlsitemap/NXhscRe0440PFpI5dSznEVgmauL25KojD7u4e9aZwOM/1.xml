@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://acces-passion.triple-y.ca/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/ortheses-pour-membres-superieurs</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/protheses-orthopediques</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/ortheses-pour-membres-inferieurs</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/pediatrie</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/pieds</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/aides-la-mobilite</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/aides-la-vie-quotidienne</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/readaptation</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/categories/ortheses-pour-tronc-et-cou</loc></url>
+<url><loc>http://acces-passion.triple-y.ca/contact</loc><lastmod>2011-10-06T19:40Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
+<url><loc>http://acces-passion.triple-y.ca/todo</loc><lastmod>2012-03-05T20:37Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
+<url><loc>http://acces-passion.triple-y.ca/besoin-dun-moderateur</loc><lastmod>2012-07-24T13:47Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://acces-passion.triple-y.ca/nouvelle/nouveau-site</loc><lastmod>2011-09-19T20:11Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://acces-passion.triple-y.ca/accueil</loc><lastmod>2011-10-13T16:10Z</lastmod><changefreq>yearly</changefreq><priority>1.0</priority></url>
+</urlset>

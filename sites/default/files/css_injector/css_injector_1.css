@@ -1,0 +1,15 @@
+body {
+	background: transparent url(../images/body_back.jpg) repeat-y top center;
+}
+
+	#page-wrapper {
+		background-color: transparent;
+	} 
+
+		#page {
+			background-color: transparent;
+		}
+	
+			#main-wrapper {
+				background-color: transparent;
+			}
